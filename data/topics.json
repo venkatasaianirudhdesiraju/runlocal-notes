@@ -1,0 +1,72 @@
+[
+  {
+    "slug": "self-hosted-ai-stack-2026",
+    "title": "A Minimal Self-Hosted AI Stack: What You Actually Need",
+    "angle": "Lay out the smallest set of pieces (model runner, a thin API layer, a UI) needed to self-host AI tooling, contrasting with over-engineered setups.",
+    "tags": ["self-hosted", "architecture"],
+    "status": "pending"
+  },
+  {
+    "slug": "fastapi-local-llm-api-pattern",
+    "title": "Wrapping a Local LLM in a Clean FastAPI Service",
+    "angle": "Show the pattern of putting a small FastAPI layer in front of Ollama so other local tools can call a stable internal API instead of hitting Ollama directly.",
+    "tags": ["fastapi", "ollama", "architecture"],
+    "status": "pending"
+  },
+  {
+    "slug": "sqlite-for-local-first-apps",
+    "title": "Why SQLite Is the Right Default for Local-First Apps",
+    "angle": "Make the case for SQLite as the default storage for single-user local tools, including backup via file copy and when to graduate to Postgres.",
+    "tags": ["sqlite", "local-first"],
+    "status": "pending"
+  },
+  {
+    "slug": "best-mini-pc-for-self-hosted-ai",
+    "title": "What Hardware You Actually Need to Self-Host AI at Home",
+    "angle": "Practical hardware guidance (RAM, VRAM thresholds, mini PC vs tower) for running 7B-13B local models comfortably, without recommending overkill.",
+    "tags": ["hardware", "buying-guide"],
+    "status": "pending"
+  },
+  {
+    "slug": "grounding-local-llm-with-system-prompt",
+    "title": "Grounding a Local LLM So It Stops Making Things Up",
+    "angle": "Techniques for keeping a small local model factual: structured system prompts built from real data, explicit 'say you don't know' instructions, and keeping scope narrow.",
+    "tags": ["prompting", "local-llm"],
+    "status": "pending"
+  },
+  {
+    "slug": "streaming-llm-responses-nextjs",
+    "title": "Streaming LLM Responses to the Browser with Next.js",
+    "angle": "Walk through forwarding a streamed model response from a server API route to a ReadableStream the client can consume incrementally.",
+    "tags": ["nextjs", "streaming"],
+    "status": "pending"
+  },
+  {
+    "slug": "rate-limiting-a-personal-api",
+    "title": "Rate Limiting Your Own API Without Overbuilding It",
+    "angle": "A token-bucket rate limiter simple enough to add to a small self-hosted API in an afternoon, with real code.",
+    "tags": ["api-design", "rate-limiting"],
+    "status": "pending"
+  },
+  {
+    "slug": "backing-up-a-single-sqlite-file",
+    "title": "Backing Up a Self-Hosted App That's Just One SQLite File",
+    "angle": "Practical backup strategies (scheduled copy, versioned snapshots, cloud sync of one file) for single-file local databases.",
+    "tags": ["sqlite", "backups"],
+    "status": "pending"
+  },
+  {
+    "slug": "when-to-stop-self-hosting",
+    "title": "When Self-Hosting Stops Being Worth It",
+    "angle": "Honest take on the point where self-hosting a tool costs more time than it saves, and what tips the balance back toward a hosted service.",
+    "tags": ["self-hosted", "opinion"],
+    "status": "pending"
+  },
+  {
+    "slug": "local-agent-tool-use-pattern",
+    "title": "Giving a Local Model Tools Without an Agent Framework",
+    "angle": "A minimal pattern for letting a local LLM call a couple of real functions (e.g. read a file, query a DB) without pulling in a heavy agent framework.",
+    "tags": ["agents", "local-llm"],
+    "status": "pending"
+  }
+]
