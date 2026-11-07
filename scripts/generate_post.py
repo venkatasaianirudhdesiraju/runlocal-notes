@@ -113,27 +113,7 @@ def main():
         ]
     )
     run(["git", "push", "-u", "origin", branch])
-
-    pr_body = (
-        f"Auto-drafted with {MODEL} from the topic backlog. Marked `draft: true` so it won't "
-        "deploy even if merged accidentally without review. Read it, fix anything wrong, flip "
-        "`draft: false`, then merge to publish."
-    )
-    try:
-        run(
-            [
-                "gh",
-                "pr",
-                "create",
-                "--title",
-                f"Draft: {topic['title']}",
-                "--body",
-                pr_body,
-            ]
-        )
-    except subprocess.CalledProcessError:
-        print("Pushed branch but could not open a PR automatically (gh not available?).")
-        print(f"Branch: {branch}")
+    print(f"Pushed {branch} — the open-draft-pr workflow will open the PR on GitHub.")
 
     run(["git", "checkout", "main"])
     return 0

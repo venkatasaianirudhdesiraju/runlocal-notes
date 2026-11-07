@@ -1,0 +1,23 @@
+name: Open PR for draft branch
+
+on:
+  push:
+    branches: ["draft/**"]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  open-pr:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh pr create \
+            --title "Draft: ${GITHUB_REF_NAME#draft/}" \
+            --body "Auto-drafted locally with a local Ollama model from the topic backlog. Marked \`draft: true\` so it won't deploy even if merged without review. Read it, fix anything wrong, flip \`draft: false\`, then merge to publish." \
+            --head "${GITHUB_REF_NAME}" \
+            --base main || echo "PR may already exist for this branch"
