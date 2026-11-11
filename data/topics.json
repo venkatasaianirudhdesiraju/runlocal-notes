@@ -18,7 +18,7 @@
       "ollama",
       "architecture"
     ],
-    "status": "pending"
+    "status": "drafted"
   },
   {
     "slug": "sqlite-for-local-first-apps",
