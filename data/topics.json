@@ -38,7 +38,7 @@
       "hardware",
       "buying-guide"
     ],
-    "status": "pending"
+    "status": "drafted"
   },
   {
     "slug": "grounding-local-llm-with-system-prompt",
