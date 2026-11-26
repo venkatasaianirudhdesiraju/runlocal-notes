@@ -48,7 +48,7 @@
       "prompting",
       "local-llm"
     ],
-    "status": "pending"
+    "status": "drafted"
   },
   {
     "slug": "streaming-llm-responses-nextjs",
